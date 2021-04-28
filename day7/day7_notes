@@ -1,0 +1,12 @@
+# Loops
+While Loop:
+
+# Initialize Loop variable
+i = 0
+
+# start the loop
+while i < 10:
+    # statement1 
+    # statement2
+    ....
+    # increment the loop variable -> last statement

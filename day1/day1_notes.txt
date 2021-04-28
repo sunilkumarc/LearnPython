@@ -1,0 +1,86 @@
+INTRODUCTION
+============
+
+JAVA, Python, C, C++   ->  Interpreter / Compilers / Intermediate program  ->    0 and 1
+
+Python -> Python Interpreter -> 0, 1
+Python
+print('Hello World')
+
+Java
+System.out.Println("Hello, World") -> JVM -> 0, 1
+
+PYTHON
+======
+- Fastest growing languages
+    - developers
+    - number of libraries (inbuilt, third party: numpy, pandas)
+    - number of companies
+
+Python, Java, GoLang
+
+Areas where Python is used:
+    - Machine Learning
+    - Web Development (Google, Youtube, Dropbox)
+    - GUI Development (PyQt)
+    - Data Science
+    - Game Development
+    etc
+
+- Interpreted Language (Compiled languages)
+    a = 10
+    b = 10
+    c = a + b - 
+    print(c)
+
+- Easy Syntax, very popular
+
+- Version of Python (2.x, 3.x)
+    2.1.1 (a + b + c)
+    2.1.2 (a + b + c + d)
+    2.7.1
+
+    3.7
+
+    - python -V
+    - python --version
+    - which python
+    - we can install python 2 and python 3
+
+Different ways of executing python code
+- Commandline (From terminal)
+    python day1.py
+- IDE (Inbuilt buttons to run your programs)
+- python, ipython notebook, jupyter notebook
+
+
+Number:
+    - integers
+    - floating point numbers
+
+    BODMAS Rule
+    B -> Brackers, (), {}, []
+    O -> Order, Square, Square Root (2 square = 4, square root of 9 = 3)
+    D -> Division
+    M -> Multiplication
+    A & S -> Addition and Subtration
+
+    In [4]: 8 / 2 * 3
+    Out[4]: 12
+
+    In [5]: 2 * 2
+    Out[5]: 4
+
+    In [6]: 2 * 2 * 2
+    Out[6]: 8
+
+    In [7]: 2 * 2 * 2 * 2
+    Out[7]: 16
+
+    In [8]: 2 ** 4
+    Out[8]: 16
+
+    In [10]: import math
+
+    In [11]: math.pow(2, 4)
+    Out[11]: 16.0

@@ -1,0 +1,107 @@
+Basics
+======
+Number
+Strings
+Lists
+Tuples
+Sets
+Dictionaries
+Booleans
+
+Operators
+=========
+Comparison operators - >, <, >=, <=
+
+Methods / Functions
+=====================
+how to define functions
+pass parameters
+default parameters
+variable scopes
+arbitary arguments
+
+Python Statements
+==================
+if
+elif
+else
+while loops
+for loops
+    range
+list comprehension
+
+Files
+=====
+- Read from file
+- Write to file
+- Creating files
+- Deleting files
+
+Errors and Exception Handling
+==============================
+try
+except
+finally
+create own exceptions
+
+=========
+lambda
+map
+filter
+
+Object Oriented Programming
+===========================
+Classes
+Objects
+Instance methods
+Class Atrributes
+Instance Attributes
+Inheritance
+
+Python Variable scopes
+Python Math
+Python Modules (How to structure the code when writing Python programs)
+
+Advanced Topics In:
+===================
+Lists
+Sorting
+
+Modules and Packages
+====================
+creating modules
+installing modules
+
+Course 2 (Web application development):
+Web Applications using Python / HTML / CSS / JavaScript
+- Build one complete application
+
+Backend Engineer:
+================
+Python
+GoLang / Go
+JavaScript
+
+Python / Flask
+Python / Django -> Web Applications
+GoLang / Echo
+JavaScript / Node.js
+
+UI -> Web Page
+
+APIs -> Application Programming Interface
+Databases
+
+
+Web Application
+Backend -> Python / Flask
+FrontEnd -> HTML / CSS / JavaScript, ReactJS, Angular JS
+
+Backend Engineer
+Front End Engineer
+Full Stack Engineer
+
+Art Work, JPEG
+
+
+- 14 minutes extra on day 26

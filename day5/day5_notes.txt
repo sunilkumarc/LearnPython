@@ -1,0 +1,21 @@
+Function:
+========
+- example1.py
+    - How to define a function
+    - How to call a function
+    - How to receive vales from a function
+
+- example2.py
+    - How to take string variables as parameters in function
+    - How to join two string and return from a function
+    - How to receive the joined string and print the result
+
+- example3.py
+    - How to use default arguments in Python functions
+    - if an argument is not passed, then default value will be used
+    - if an argument is passed, this value will override the default value
+
+- example4.py
+    - How to return multiple values from a function
+    - Values will be received in the same order in which values were returned 
+        from a function.

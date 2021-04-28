@@ -1,0 +1,192 @@
+String:
+=======
+- represented using single and double quotes
+a = 'Sunil'
+b = "Laptop"
+
+- Escaping
+========================
+a = 'Sunil\'s "Laptop"'
+print(a)
+Sunil's "Laptop"
+
+a = "Sunil's \"Laptop\""
+
+In [19]: print(a)
+Sunil's "Laptop"
+
+String Concatenation:
+========================
+In [25]: 'Sunil' + 'Kumar'
+Out[25]: 'SunilKumar'
+
+In [26]: 'Sunil' + ' - ' + 'Kumar'
+Out[26]: 'Sunil - Kumar'
+
+In [27]: a = 'Sunil' + ' - ' + 'Kumar'
+
+In [28]: print(a)
+Sunil - Kumar
+
+String Multiplication:
+========================
+In [32]: 'Sunil ' * 2
+Out[32]: 'Sunil Sunil '
+
+In [33]:
+
+In [33]: 'Sunil ' * 10
+Out[33]: 'Sunil Sunil Sunil Sunil Sunil Sunil Sunil Sunil Sunil Sunil '
+
+
+Arrays:
+Sequence of characters or number or any data type in general
+- indexing starts with 0
+
+Array, List, String, Characters
+Array -> not a term we use in python
+List -> term used for Arrays in Python
+String -> List of characters
+Character -> 'P' and 'y', '1', '2', '0', '1.1'
+
+Indexing:
+In [35]: a = 'Python Is Awesome'
+In [36]: a[0]
+Out[36]: 'P'
+
+In [37]: a[1]
+Out[37]: 'y'
+
+In [38]: a[2]
+Out[38]: 't'
+
+Last Character:
+In [41]: a = 'Python'
+
+In [42]: a[-1]
+Out[42]: 'n'
+
+String Slicing:
+===============
+string[start_index:end_index]
+In [43]: a = 'Python Is Awesome'
+
+In [44]: a[7:8]
+Out[44]: 'I'
+
+In [45]: a[7:9]
+Out[45]: 'Is'
+
+In [46]: a[0:6]
+Out[46]: 'Python'
+
+In [43]: a = 'Python Is Awesome'
+
+In [44]: a[7:8]
+Out[44]: 'I'
+
+In [45]: a[7:9]
+Out[45]: 'Is'
+
+In [46]: a[0:6]
+Out[46]: 'Python'
+
+In [47]: a[1:]
+Out[47]: 'ython Is Awesome'
+
+In [48]: a[:8]
+Out[48]: 'Python I'
+
+In [50]: a = 'hello'
+
+In [51]: len(a)
+Out[51]: 5
+
+Lists
+============
+- sequence of elements
+- order is maintained in lists
+- elements can be accessed through indexes
+- lists allow duplicates
+
+Sorting in list:
+In [109]: a
+Out[109]: [4, 1, 0, 19, 25]
+
+In [110]: a.sort()
+
+In [111]: a
+Out[111]: [0, 1, 4, 19, 25]
+
+In [112]: b = [5, 2, 0, 20, 67, 1]
+
+In [113]: b.sort(reverse=True)
+
+In [114]: b
+Out[114]: [67, 20, 5, 2, 1, 0]
+
+In [115]: c = [4, 0, 9, 1, 100]
+
+In [116]: c.sort(reverse=False)
+
+In [117]: c
+Out[117]: [0, 1, 4, 9, 100]
+
+Should be tried on your own:
+a.append  a.index   a.remove
+a.count   a.insert  a.reverse
+a.extend  a.pop     a.sort
+
+Python lists can contains lists within them
+
+In [142]: a = [1, "Sunil", [4, 5, 6]]
+
+In [143]: a
+Out[143]: [1, 'Sunil', [4, 5, 6]]
+
+In [144]: a[0]
+Out[144]: 1
+
+In [145]: a[1]
+Out[145]: 'Sunil'
+
+In [146]: a[2]
+Out[146]: [4, 5, 6]
+
+In [149]: a[2][1]
+Out[149]: 5
+
+In [156]: a = [1, "Sunil", [1, "Codementor"]]
+
+In [157]: len(a[2][1])
+Out[157]: 10
+
+In [158]: a[2][1]
+Out[158]: 'Codementor'
+
+Tuples
+=============
+
+Sets
+=============
+
+
+Dictionaries
+============
+
+
+Check how many arguments a funciton takes:
+===========================================
+>>> from inspect import signature
+>>> signature(len)
+<Signature (obj, /)>
+>>> def add_two_nums(a, b):
+...     return a + b
+...
+>>> signature(add_two_nums)
+<Signature (a, b)>
+>>> def test(a, b, c):
+...     return a + b + c
+...
+>>> signature(test)
+<Signature (a, b, c)>

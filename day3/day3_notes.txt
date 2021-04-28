@@ -1,0 +1,433 @@
+Tuples
+=============
+- maintains ordereding or elements
+- indexable just like lists
+- tuple elements are unchangeable
+- allows duplicates
+
+- count() method -> returns the number of occurrences of a particular element. 
+    Returns 0 if element doesn't exist in the tuple.
+- index() method -> returns the index of a given element. 
+    Throws an error if element doesn't exist 
+
+- how to define single element tuples (we need to put a comman at the end)
+a = (1,)
+
+function -> generic term used across all the programming languages
+method -> used in Python
+
+name()
+
+different ways of creating tuples in Python
+1. t = (1, 2, 3, "Sunil")
+2. t2 = tuple((1, 2, 3, "Sunil"))
+
+Sunil (Explore):
+
+Sets
+=============
+- Collection of unique elements
+- Unordered or elements is not maintained
+- elements are Unchangeable
+- Indexing is not supported in sets because original order of elements is not maintained in set.
+
+s = {1, 2, 3, 4}
+s.add                         s.discard                     s.issuperset                  s.union
+s.clear                       s.intersection                s.pop                         s.update
+s.copy                        s.intersection_update         s.remove
+s.difference                  s.isdisjoint                  s.symmetric_difference
+s.difference_update           s.issubset                    s.symmetric_difference_update
+
+- pop() -> returns random elements from a set
+- clear() -> clears a given set
+
+In [121]: s = {1, 2, 3, 4}
+
+In [122]: set((1, 2, 3, 4))
+Out[122]: {1, 2, 3, 4}
+
+set(), tuple(), list() to create sets, tupes or lists respectively we should always pass double brackets -> (())
+
+-> time complexity of searching elements is constant in set
+-> time complexity of searching elements is linear in lists
+
+========================================================================================================================
+CODE
+========================================================================================================================
+
+In [2]: list((1, 2, 3))
+Out[2]: [1, 2, 3]
+In [3]: type
+In [3]: len([1, 2, 3])
+In [3]: len([1, 2, 3])
+Out[3]: 3
+
+In [4]: l = [1, 2, 3]
+
+In [5]: type(l)
+Out[5]: list
+
+In [6]: a = 'Sunil'
+
+In [7]: type(a)
+Out[7]: str
+
+In [8]: b = 10
+
+In [9]: type(b)
+Out[9]: int
+In [10]: l = [1, "Sunil", 3]
+In [10]: l = [1, "Sunil", 3]
+
+In [11]: l
+Out[11]: [1, 'Sunil', 3]
+
+In [12]: list((1, 2, 3, 4))
+Out[12]: [1, 2, 3, 4]
+
+In [13]: l = list((1, 2, 3, 4))
+
+In [14]: l
+Out[14]: [1, 2, 3, 4]
+In [15]: l = list((1, 2, 3, 5, 5))
+In [15]: l = list((1, 2, 3, 5, 5))
+
+In [16]: t = tuple((1, 2, 3, 4))
+
+In [17]: t
+Out[17]: (1, 2, 3, 4)
+
+In [18]: l
+Out[18]: [1, 2, 3, 5, 5]
+In [19]:
+In [19]: t = (1, 2, 3, "Sunil", 10.1)
+In [19]: t = (1, 2, 3, "Sunil", 10.1)
+
+In [20]: t
+Out[20]: (1, 2, 3, 'Sunil', 10.1)
+
+In [21]: t[0]
+Out[21]: 1
+
+In [22]: t[3]
+Out[22]: 'Sunil'
+
+In [23]: l = [1, 2, 3]
+
+In [24]: l
+Out[24]: [1, 2, 3]
+
+In [25]: l[0] = 100
+
+In [26]: l
+Out[26]: [100, 2, 3]
+
+In [27]: t
+Out[27]: (1, 2, 3, 'Sunil', 10.1)
+
+In [28]: t[0] = 100
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+<ipython-input-28-e6cf7836e708> in <module>()
+----> 1 t[0] = 100
+
+TypeError: 'tuple' object does not support item assignment
+
+In [29]: ll = list(t)
+
+In [30]: ll
+Out[30]: [1, 2, 3, 'Sunil', 10.1]
+
+In [31]: type(t)
+Out[31]: tuple
+
+In [32]: type(ll)
+Out[32]: list
+
+In [33]: ll[0] = 100
+
+In [34]: ll
+Out[34]: [100, 2, 3, 'Sunil', 10.1]
+In [35]: t1 = (1, 1, 2, "Sunil")
+In [35]: t1 = (1, 1, 2, "Sunil")
+
+In [36]: t1
+Out[36]: (1, 1, 2, 'Sunil')
+
+In [37]: ll
+Out[37]: [100, 2, 3, 'Sunil', 10.1]
+
+In [38]: t1.count()
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+<ipython-input-38-744d352f266f> in <module>()
+----> 1 t1.count()
+
+TypeError: count() takes exactly one argument (0 given)
+
+In [39]: t1.count(1)
+Out[39]: 2
+
+In [40]: t1
+Out[40]: (1, 1, 2, 'Sunil')
+
+In [41]: t2 = (1, 1, 1, 2, 2)
+
+In [42]: t2.count(1)
+Out[42]: 3
+
+In [43]: t2.count(2)
+Out[43]: 2
+
+In [44]: t2.index(1)
+Out[44]: 0
+
+In [45]: ll
+Out[45]: [100, 2, 3, 'Sunil', 10.1]
+
+In [46]: ll[3]
+Out[46]: 'Sunil'
+
+In [47]: t
+Out[47]: (1, 2, 3, 'Sunil', 10.1)
+
+In [48]: t[3]
+Out[48]: 'Sunil'
+
+In [49]: t.index('Sunil')
+Out[49]: 3
+
+In [50]: colors = ('green', 'red', 'blue', 'orange', 'black')
+
+In [51]: colors.index('black')
+Out[51]: 4
+
+In [52]: colors.index('random')
+---------------------------------------------------------------------------
+ValueError                                Traceback (most recent call last)
+<ipython-input-52-86e2941f9a01> in <module>()
+----> 1 colors.index('random')
+
+ValueError: tuple.index(x): x not in tuple
+
+In [53]: ll
+Out[53]: [100, 2, 3, 'Sunil', 10.1]
+
+In [54]: ll.append(200)
+
+In [55]: ll
+Out[55]: [100, 2, 3, 'Sunil', 10.1, 200]
+
+In [56]: t1 = (1, 2)
+
+In [57]: t2 = (3, 4)
+
+In [58]: t3 = t1 + t2
+
+In [59]: t3
+Out[59]: (1, 2, 3, 4)
+
+In [60]: t1
+Out[60]: (1, 2)
+
+In [61]: t2
+Out[61]: (3, 4)
+
+In [62]: t3
+Out[62]: (1, 2, 3, 4)
+
+In [63]: t4 = t3 + (5)
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+<ipython-input-63-cd8aab3963ed> in <module>()
+----> 1 t4 = t3 + (5)
+
+TypeError: can only concatenate tuple (not "int") to tuple
+
+In [64]: t4 = t3 + (5,)
+
+In [65]: t4
+Out[65]: (1, 2, 3, 4, 5)
+
+In [66]: t5 = t4 + (6, 7)
+
+In [67]: t5
+Out[67]: (1, 2, 3, 4, 5, 6, 7)
+
+In [68]: t6 = ('hello')
+
+In [69]: type(t6)
+Out[69]: str
+
+In [70]: t6
+Out[70]: 'hello'
+
+In [71]: t6 = ('hello',)
+
+In [72]: t6
+Out[72]: ('hello',)
+
+In [73]: type(t6)
+Out[73]: tuple
+
+In [74]: t
+Out[74]: (1, 2, 3, 'Sunil', 10.1)
+
+In [75]: t.count(3)
+Out[75]: 1
+
+In [76]: t.count(5)
+Out[76]: 0
+
+In [77]: len(t)
+Out[77]: 5
+In [78]: t2 = tuple((1, 2, 3, "Sunil"))
+In [78]: t2 = tuple((1, 2, 3, "Sunil"))
+
+In [79]: t2
+Out[79]: (1, 2, 3, 'Sunil')
+In [80]: s = {1, 2, 3}
+In [80]: s = {1, 2, 3}
+
+In [81]: s
+Out[81]: {1, 2, 3}
+
+In [82]: type(s)
+Out[82]: set
+
+In [83]: s1 = {1, 1, 2, 3}
+
+In [84]: s1
+Out[84]: {1, 2, 3}
+
+In [85]: s = {22, 24, 25, 15, 2, 89}
+
+In [86]: s
+Out[86]: {2, 15, 22, 24, 25, 89}
+
+In [87]: s1 = {89, 90, 87, 89, 1, -1}
+
+In [88]: s1
+Out[88]: {-1, 1, 87, 89, 90}
+
+In [89]: s2 = {98, 100, 97}
+
+In [90]: s2
+Out[90]: {97, 98, 100}
+In [91]: s
+In [91]: s
+Out[91]: {2, 15, 22, 24, 25, 89}
+In [92]: s = {4, 20, 10, 100}
+In [92]: s = {4, 20, 10, 100}
+
+In [93]: s
+Out[93]: {4, 10, 20, 100}
+
+In [94]: s.add(56)
+
+In [95]: s
+Out[95]: {4, 10, 20, 56, 100}
+
+In [96]: s[0]
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+<ipython-input-96-c9c96910e542> in <module>()
+----> 1 s[0]
+
+TypeError: 'set' object does not support indexing
+In [97]: s
+In [97]: s
+Out[97]: {4, 10, 20, 56, 100}
+
+In [98]: popped_element = s.pop()
+
+In [99]: s
+Out[99]: {4, 10, 20, 100}
+
+In [100]: popped_element
+Out[100]: 56
+
+In [101]: l = [1, 2, 3]
+
+In [102]: p = l.pop()
+
+In [103]: l
+Out[103]: [1, 2]
+
+In [104]: s
+Out[104]: {4, 10, 20, 100}
+
+In [105]: s.pop()
+Out[105]: 20
+
+In [106]: s
+Out[106]: {4, 10, 100}
+In [107]: s.clear()
+In [107]: s.clear()
+
+In [108]: s
+Out[108]: set()
+
+In [109]: len(s)
+Out[109]: 0
+In [110]: (1, 2, 3, 4, 5)
+In [110]: (1, 2, 3, 4, 5)
+Out[110]: (1, 2, 3, 4, 5)
+
+In [111]: su = (1, 2, 3, 4, 5)
+
+In [112]: s = (1, 2)
+
+In [113]: su
+Out[113]: (1, 2, 3, 4, 5)
+
+In [114]: su = {1, 2, 3, 4, 5}
+
+In [115]: s = {1, 2}
+
+In [116]: su.issuperset(s)
+Out[116]: True
+
+In [117]: s.issuperset(su)
+Out[117]: False
+In [118]: s = {1, 2, "Sunil", 10.1}
+In [118]: s = {1, 2, "Sunil", 10.1}
+
+In [119]: s
+Out[119]: {1, 2, 10.1, 'Sunil'}
+
+In [120]: len(s)
+Out[120]: 4
+
+In [121]: s = {1, 2, 3, 4}
+
+In [122]: set((1, 2, 3, 4))
+Out[122]: {1, 2, 3, 4}
+In [123]: s
+In [123]: s
+Out[123]: {1, 2, 3, 4}
+In [124]:
+In [124]:
+
+In [124]: s
+Out[124]: {1, 2, 3, 4}
+
+In [125]: 3 in s
+Out[125]: True
+
+In [126]: 5 in s
+Out[126]: False
+
+In [127]: l = [1, 2, 3, 4]
+
+In [128]: 3 in l
+Out[128]: True
+
+In [129]: 5 in l
+Out[129]: False
+
+In [130]: l = [............., 4]
+  File "<ipython-input-130-1c520a44590f>", line 1
+    l = [............., 4]
+         ^
+SyntaxError: invalid syntax

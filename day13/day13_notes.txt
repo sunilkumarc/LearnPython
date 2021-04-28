@@ -1,0 +1,8 @@
+Two type of errors can occur in our code:
+
+1. Syntax error
+    Any typo in the python code which makes the code invalid
+    The only way is to fix the typo in the code.
+
+2. Logical error
+    - Logical errors happen in the runtime

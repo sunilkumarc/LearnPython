@@ -1,0 +1,3 @@
+1. os.remove() -> to remove files
+2. os.rmdir() -> to remove empty folders
+3. shutil.rmtree() -> to remove everything inside a folder and the folder as well.

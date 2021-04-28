@@ -1,0 +1,23 @@
+
+0. Write a Python program to find those numbers which are divisible by 7 and multiple of 5, between 1500 and 2700 (both included). -> DONE
+
+1. Write a Python program to get the smallest number from a list.
+l = [4, 5, 0, -1, 8, 100, 3]
+result -> -1
+
+2. Write a Python program to get the second biggest number in the list.
+l = [4, 5, 0, -1, 8, 100, 3]
+result -> 8
+
+3. Write a function Loop to through all the months present in 'months' list and return
+the months which have 30 days in them.
+months = {
+    'jan': 31,
+    'feb': 29,
+    'mar': 31, 
+    'apr': 30,
+    'may': 31, 
+    'jun': 30,
+    'july': 31
+}
+result => ['apr', 'jun']

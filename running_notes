@@ -1,0 +1,293 @@
+Day 1:
+What are programming languages?
+    - In between plain english and binary format which computers understand
+Fastest growing language
+- in terms of no of developers
+- no of libraries
+- no of companies
+- areas you can implement
+    - Machine learning
+    - Web development
+    - GUI development
+    - Software Development
+    - Data Science
+- Interpreted, Object Oriented & High Level Language
+- Easy Syntax, relatively easy to learn
+- Google, YouTube, Dropbox, Reddit
+- 2.x, 3.x etc
+    - 3.7 is the latest verion
+- PyCharm (IDEs)
+- iPython Notebook 
+- python
+Integers:
+=========
+2 + 3
+9 - 8
+4 * 6
+8 / 4
+5 / 2
+5 // 2 (Integer division)
+8 + 9 - 10
+8 + 9 - (Error)
+8 + 2 * 3 
+(BODMAS)
+    - Brackets {}, (), []
+    - Order square, square root
+    - division, m, a & s
+(8 + 2) * 3
+2 * 2 * 2
+What if we need it 10 times. can't type it so many times
+2 ** 3
+10 % 3 = 1
+Floats:
+=======
+Strings:
+==================================================
+- Single or double quotes
+'google', 'youtube'
+a = 'google'
+print(a)
+Escaping
+print('Sunil's laptop')
+1. print("Sunil's laptop")
+2. print('Sunil "Laptop"')
+3. print("Sunil's \"Laptop\"")
+String indexing
+String concatenation
+'a' + 'b'
+'sunil ' * 10
+Newline Character:
+==================
+- print('c:\docs\navin')
+- Raw String
+    print(r'c:\docs\navin')
+len
+===
+len(a)
+
+list
+==================================================
+- sequence of elements
+- order is maintained
+- elements can be accessed through index
+- allows duplicate values
+a = [1, 2, 3, 4]
+print(a)
+a[0]
+- append
+- pop
+- reverse
+- sort
+- how to get list length
+- can contain different data types in single list
+l = [1, 2, 3, 4]
+- type(l)
+- using list constructor to make a list
+
+Tuples:
+==================================================
+- ordered
+- unchangeable
+- allows duplicates
+tup = (21, 36, 14, 25)
+tup
+tup[1]
+tup[1] = 10
+tup.count(21)
+tup.index(14)
+
+- cannot change values in tuples
+- used when values shouldn't be changed
+- iteration in tuples is faster
+- cannot add new elements
+
+tuple length
+len(t)
+
+- Creating tuple with one element
+- Add comma after first element
+- allows data with different data types
+- create tuple with tuple constructor
+
+t = tuple(('a', 'b', 3))
+
+Set
+==================================================
+- Collection of unique elements
+- unordered
+- unchangeable
+- do not allow duplicates
+s = {}
+s = {22, 24, 25, 15, 2, 89}
+- will not guarantee the order of elements
+s = {25, 14, 98, 63, 75, 98}
+- so cannot use index to access elements
+- add elements using add()
+- pop()
+- remove()
+
+get length of a set
+len(s)
+
+allows data of different data types
+get type of set:
+type(s)
+
+creating set with set constructor:
+s = set((1, 2, 3))
+
+Dictionaries:
+==============
+- unordered
+- chaneable
+- no duplicates for keys
+
+m = {
+    "a": 1,
+    1: 100,
+    1.1: "500"
+}
+
+length of keys:
+len(m)
+
+type(m)
+
+- How to loop a dictionary elements
+
+Booleans:
+=========
+- True or False
+
+a = 200
+b = 33
+
+if b > a:
+  print("b is greater than a")
+else:
+  print("b is not greater than a")
+
+Evaluating other types to booleans:
+----------------------------------
+print(bool("Hello"))
+print(bool(15))
+
+Most Values are True
+---------------------
+Almost any value is evaluated to True if it has some sort of content.
+Any string is True, except empty strings.
+Any number is True, except 0.
+Any list, tuple, set, and dictionary are True, except empty ones.
+
+bool("abc")
+bool(123)
+bool(["apple", "cherry", "banana"])
+
+Some Values are False
+---------------------
+bool(False)
+bool(None)
+bool(0)
+bool("")
+bool(())
+bool([])
+bool({})
+
+FUNCTIONS
+==================================================
+1. How to define a function?
+def my_function():
+  print("Hello from a function")
+
+my_function()
+
+- arguments
+def my_function(fname):
+  print(fname + " Refsnes")
+
+- Parameters or arguments?
+
+- Number of arguments:
+def my_function(fname, lname):
+  print(fname + " " + lname)
+
+- my_function("Sunil") # Error
+
+- Arbitary Number of arguments
+def my_function(*kids):
+  print("The youngest child is " + kids[2])
+
+my_function("Emil", "Tobias", "Linus")
+
+- Keyword arguments
+def my_function(child3, child2, child1):
+  print("The youngest child is " + child3)
+
+my_function(child1 = "Emil", child2 = "Tobias", child3 = "Linus")
+
+- Arbitary keyword arguments
+def my_function(**kid):
+  print("His last name is " + kid["lname"])
+
+my_function(fname = "Tobias", lname = "Refsnes")
+
+- default parameter value
+def my_function(country = "Norway"):
+  print("I am from " + country)
+
+my_function("Sweden")
+my_function("India")
+my_function()
+my_function("Brazil")
+
+- passing list as an argument
+
+- pass statement in Python
+
+VARIABLES
+==================================================
+- A container where we can keep values (number, string, list, dictionary etc)
+a = 10
+a = 10.1
+a = "Sunil"
+print(a)
+b = "Kumar"
+c = a + b
+print(c)
+Indexing:
+First char -> a[0]
+Last char -> a[-1]
+Slicing -> a[0:2], a[1:2], a[1:], a[1:100]
+Convert 'youtube' to 'my own tube'
+Item assignment
+a = 'Hello'
+a[0] = 'T'
+
+While Loop:
+  - continue
+  - break
+  - increment by 1, by 2 etc..
+
+For Loop:
+  - continue
+  - break
+
+for x in "banana":
+  print(x)
+
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  print(x)
+  if x == "banana":
+    break
+
+for x in range(6):
+  print(x)
+
+for x in range(2, 6):
+  print(x)
+
+for x in range(2, 30, 3):
+  print(x)
+
+pass statement

@@ -1,0 +1,10 @@
+Different Exceptions discussed as of now:
+
+1. KeyError
+2. ValueError
+3. ZeroDivisionError
+4. IndexError
+
+
+All the built in errors that can come in a Python program: 
+https://docs.python.org/3/library/exceptions.html

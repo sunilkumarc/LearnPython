@@ -1,0 +1,40 @@
+Dictonaries:
+============
+d = {
+    key: value,
+    key2: value2,
+    key3: value3
+}
+
+months = {
+    1: "January",
+    2: "Februray",
+    10: "March",
+    3: ["April", "May", "June"],
+    4: "January"
+}
+months.clear      months.get        months.iteritems  months.keys       months.setdefault months.viewitems
+months.copy       months.has_key    months.iterkeys   months.pop        months.update     months.viewkeys
+months.fromkeys   months.items      months.itervalues months.popitem    months.values     months.viewvalues
+
+- keys should be unique
+- value need not be unique
+- keys can be of different data types
+
+"quarter4":
+    - october, november, december
+
+
+GLOBAL METHODS:
+    - len, type etc
+
+Data Type Level Methods:
+    - depends on the data type
+
+BOOLEANS:
+=========
+
+if (SOME_CONDITION):
+    do something
+else:
+    do something else
